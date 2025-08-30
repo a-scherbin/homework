@@ -1,0 +1,25 @@
+.black-block {
+  background-color: #423e3b;
+}
+.black-block__text1 {
+    color: white;
+}
+.black-block__text2 {
+  color: #c47bc7;
+}
+.black-block__red-square {
+  background-color: #f94041;
+  width: 100px;
+  height: 100px;
+}
+.violet-block {
+  background-color: #c69ef9;
+  width: 300px;
+}
+.violet-block__text1 {
+    color: black;
+}
+.violet-block__text2 {
+    color: white;
+    background-color: #6E43B6;
+}
