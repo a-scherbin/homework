@@ -1,0 +1,22 @@
+header {
+  background-color: #e4ad54;
+  height: 60px;
+  color: black;
+}
+footer {
+  background-color: #602ea5;
+  height: 300px;
+  color: white;
+}
+
+blockquote {
+  background-color: #f5e8cf;
+}
+
+.a-head {
+color: black;
+}
+
+.a-foot {
+  color: white;
+}
