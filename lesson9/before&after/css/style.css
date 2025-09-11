@@ -1,0 +1,33 @@
+.body {
+  background-color: #333333;
+}
+.body__title {
+  font-size: 100px;
+  color: white;
+  font-family: arial;
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+}
+.body__title::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  transform: translate(-175px, -10px);
+  width: 120px;
+  height: 120px;
+  background-color: #fa6364;
+  border-radius: 100px;
+  border: 7px solid white;
+}
+.body__title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  transform: translate(60px, -10px);
+  width: 120px;
+  height: 120px;
+  background-color: #5e5fed;
+  border-radius: 100px;
+  border: 7px solid white;
+}
