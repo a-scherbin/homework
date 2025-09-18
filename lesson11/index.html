@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>My JS</title>
+  </head>
+  <body>
+    <pre><code>
+'use strict';
+
+//Tasks #1
+
+const myDescription = {
+  firstName: 'Alex',
+  lastName: 'Scherbin',
+  age: 29,
+  country: 'Russia',
+  city: 'Tyumen',
+  male: true,
+  sayHello(name) {
+    return `Hello, ${name}!`;
+  },
+};
+
+console.log(myDescription.sayHello('Kirill'));
+
+//Tasks #2
+
+const users = {
+  Alex: { age: 29, isAdmin: true },
+  Kirill: { age: 25, isAdmin: false },
+  Albert: { age: 32, isAdmin: false },
+  Vyacheslav: { age: 40, isAdmin: true },
+  Vitaly: { age: 27, isAdmin: false },
+  Daniil: { age: 22, isAdmin: false },
+  Sergey: { age: 35, isAdmin: true },
+  Maksim: { age: 31, isAdmin: false },
+  Ivan: { age: 28, isAdmin: false },
+};
+
+let quantityUsers = 0;
+
+for (let name in users) {
+  if (!users[name].isAdmin) {
+    quantityUsers++;
+  }
+}
+
+console.log(`Количество простых пользователей: ${quantityUsers}`);
+</code></pre>
+  </body>
+</html>
