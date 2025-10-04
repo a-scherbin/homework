@@ -33,10 +33,7 @@ body {
 
 .main {
   flex-grow: 1;
-}
 
-.main__about {
-  padding: 140px 0;
 }
 .main__program {
   padding: 145px 0;
@@ -1178,3 +1175,4 @@ body {
     text-align: center;
   }
 }
+
