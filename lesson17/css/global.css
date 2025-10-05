@@ -1,0 +1,126 @@
+:root {
+  --general-text: #312c27;
+  --accent-text: #1f1711;
+  --general-bg: #fff9f4;
+  --accent-bg: #ffe0cb;
+  --accent-color: #ffa55c;
+  --transition: all 0.4s;
+  --border-radius: 20px;
+}
+
+body {
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  line-height: 1.5;
+  color: var(--general-text);
+  background: var(--general-bg);
+}
+
+.body--opened-menu {
+  overflow: hidden;
+}
+
+.body--opened-modal {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.main__about {
+  padding: 140px 0;
+}
+.main__gallery,
+.main__program {
+  padding-bottom: 140px;
+}
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.title {
+  display: block;
+  font-family: 'Gabriola';
+  font-size: 72px;
+  line-height: 0.82;
+  color: var(--accent-text);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--accent-color);
+  padding: 3px 15px;
+  height: 62px;
+  width: 100%;
+
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: #ff9138;
+}
+
+.field {
+  position: relative;
+  display: block;
+}
+
+.field span {
+  position: absolute;
+  top: 12px;
+  left: 29.5px;
+  color: #ac907a;
+  font-size: 11px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.field__input {
+  border: 1px solid #ac907a;
+  border-radius: 100px;
+  background-color: #00000000;
+  padding: 19px 42px 19px 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.field__input:hover {
+  border-color: var(--accent-color);
+}
+
+.field__input::placeholder {
+  color: #ac907a;
+}
+
+.field__input:hover::placeholder {
+  color: var(--accent-color);
+}
+
+.field__input:focus {
+  padding: 26px 42px 12px 28px;
+}
+
+.field__input:focus + span {
+  opacity: 1;
+  visibility: visible;
+}
